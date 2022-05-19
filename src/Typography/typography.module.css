@@ -1,0 +1,20 @@
+.typographyStyle {
+    color: white;
+}
+
+.headerStyle {
+    color: hsl(0, 0%, 100%);
+}
+
+.paragraphStyle {
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+
+.starStyle {
+    background-color: #384656;;
+    padding: 10px;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 10px 0;
+}

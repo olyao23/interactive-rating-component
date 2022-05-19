@@ -1,0 +1,6 @@
+.cardStyle {
+    background-color: hsl(213, 19%, 18%);
+    width: 360px;
+    border-radius: 30px;
+    padding: 30px;
+}
