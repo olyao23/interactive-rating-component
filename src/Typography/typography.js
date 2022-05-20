@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "../Typography/typography.module.css";
-import starImage from "../Images/icon-star.svg";
 
-export default function Typography() {
+export default function Typography(title, content) {
     return (
-        <div className={styles.typographyStyle}>
-            <span className={styles.starStyle}><img src={starImage} alt=""/></span>
-            <h2 className={styles.headerStyle}>How did we do?</h2>
-            <p className={styles.paragraphStyle}>Please let us know how we did with your support request. All feedback is appreciated
-                to help us improve our offering!</p>
+        <div>
+            <h2 className={styles.headerStyle}>Thank you!</h2>
+            <p className={styles.paragraphStyle}>We appreciate you taking the time to give a rating. If you ever need
+                more support, don't hesitate to get in touch!</p>
         </div>
     )
 }
+
+//treba {title} i {content} ama ne ja pokazuva

@@ -1,6 +1,40 @@
 .cardStyle {
     background-color: hsl(213, 19%, 18%);
-    width: 360px;
+    width: 335px;
     border-radius: 30px;
     padding: 30px;
+}
+
+.buttonStyle {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    border: transparent;
+    border-radius: 40px;
+    padding: 14px 150px;
+}
+
+.buttonStyle:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.starStyle {
+    background-color: #384656;;
+    padding: 10px;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.selection {
+    color: hsl(25, 97%, 53%);
+    background-color: #384656;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin: 30px 0;
+}
+
+.thankYouCard {
+    text-align: center;
 }

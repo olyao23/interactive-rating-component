@@ -1,0 +1,14 @@
+.ratingStyle {
+    background-color: #384656;
+    padding: 15px;
+    border-radius: 25px;
+    color: hsl(217, 12%, 63%);
+    border: transparent;
+    margin: 20px 10px;
+}
+
+.ratingStyle:hover {
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
