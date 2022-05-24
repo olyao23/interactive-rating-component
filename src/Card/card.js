@@ -27,45 +27,11 @@ export default function Card() {
               content="Please let us know how we did with your support request. All feedback is appreciated
                             to help us improve our offering!"
             />
-            <RatingButton
-              ratingNumber={"1"}
-              onClick={() => {
-                saveRating(1);
-              }}
-              isActive={rating === 1}
-            />
-
-            <RatingButton
-              ratingNumber={"2"}
-              onClick={() => {
-                saveRating(2);
-              }}
-              isActive={rating === 2}
-            />
-
-            <RatingButton
-              ratingNumber={"3"}
-              onClick={() => {
-                saveRating(3);
-              }}
-              isActive={rating === 3}
-            />
-
-            <RatingButton
-              ratingNumber={"4"}
-              onClick={() => {
-                saveRating(4);
-              }}
-              isActive={rating === 4}
-            />
-
-            <RatingButton
-              ratingNumber={"5"}
-              onClick={() => {
-                saveRating(5);
-              }}
-              isActive={rating === 5}
-            />
+            <RatingButton ratingNumber={"1"} />
+            <RatingButton ratingNumber={"2"} />
+            <RatingButton ratingNumber={"3"} />
+            <RatingButton ratingNumber={"4"} />
+            <RatingButton ratingNumber={"5"} />
 
             <button onClick={handleClick} className={styles.buttonStyle}>
               SUBMIT
