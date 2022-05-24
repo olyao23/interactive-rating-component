@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import styles from "./rating-button.module.css";
 
-export default function RatingButton({ ratingNumber }) {
-  function showRating() {
-    console.log("rating button " + ratingNumber + " clicked");
-  }
-
+export default function RatingButton({ ratingNumber, onClick, isActive }) {
   return (
-    <button onClick={showRating} className={styles.ratingStyle}>
+    <button
+      onClick={onClick}
+      className={isActive ? styles.activeButton : styles.ratingStyle}
+    >
       {ratingNumber}
     </button>
   );
