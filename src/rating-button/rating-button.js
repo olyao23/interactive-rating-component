@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./rating-button.module.css";
 
-export default function RatingButton(ratingNumber) {
-    return (
-        <button className={styles.ratingStyle}>1</button>
-    )
-}
+export default function RatingButton({ ratingNumber }) {
+  function showRating() {
+    console.log("rating button " + ratingNumber + " clicked");
+  }
 
-//treba da bide {ratingNumber} ama ne go pokazuva
+  return (
+    <button onClick={showRating} className={styles.ratingStyle}>
+      {ratingNumber}
+    </button>
+  );
+}

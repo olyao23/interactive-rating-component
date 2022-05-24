@@ -12,3 +12,11 @@
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
 }
+
+.selection {
+    color: hsl(25, 97%, 53%);
+    background-color: #384656;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin: 30px 0;
+}
