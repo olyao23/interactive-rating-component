@@ -16,6 +16,8 @@ export default function Card() {
   //setRatingNumber shows which rating button was clicked
   const [ratingNumber, setRatingNumber] = useState(0);
 
+  // backgroundColor = "hsl(25, 97%, 53%)";
+
   return (
     <>
       <div className={styles.cardStyle}>
