@@ -21,35 +21,38 @@ export default function Card() {
       <div className={styles.cardStyle}>
         {hideRating ? (
           <div className={styles.ratingCard}>
-            <span className={styles.starStyle}>
+            <div className={styles.starStyle}>
               <img src={starImage} alt="star image" />
-            </span>
+            </div>
+
             <Typography
               title="How did we do?"
               content="Please let us know how we did with your support request. All feedback is appreciated
                             to help us improve our offering!"
             />
 
-            <RatingButton
-              ratingNumber={"1"}
-              onClick={() => setRatingNumber(1)}
-            />
-            <RatingButton
-              ratingNumber={"2"}
-              onClick={() => setRatingNumber(2)}
-            />
-            <RatingButton
-              ratingNumber={"3"}
-              onClick={() => setRatingNumber(3)}
-            />
-            <RatingButton
-              ratingNumber={"4"}
-              onClick={() => setRatingNumber(4)}
-            />
-            <RatingButton
-              ratingNumber={"5"}
-              onClick={() => setRatingNumber(5)}
-            />
+            <div className={styles.ratingButtonsStyle}>
+              <RatingButton
+                ratingNumber={"1"}
+                onClick={() => setRatingNumber(1)}
+              />
+              <RatingButton
+                ratingNumber={"2"}
+                onClick={() => setRatingNumber(2)}
+              />
+              <RatingButton
+                ratingNumber={"3"}
+                onClick={() => setRatingNumber(3)}
+              />
+              <RatingButton
+                ratingNumber={"4"}
+                onClick={() => setRatingNumber(4)}
+              />
+              <RatingButton
+                ratingNumber={"5"}
+                onClick={() => setRatingNumber(5)}
+              />
+            </div>
 
             <button onClick={handleClick} className={styles.buttonStyle}>
               SUBMIT

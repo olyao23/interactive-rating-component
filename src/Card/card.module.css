@@ -7,18 +7,25 @@
     background-color: hsl(213, 19%, 18%);
     width: 340px;
     border-radius: 30px;
-    padding: 20px;
+    padding: 20px 29px 29px 20px;
 }
+
 
 .buttonStyle {
     color: hsl(0, 0%, 100%);
     background-color: hsl(25, 97%, 53%);
     border: transparent;
     border-radius: 40px;
-    padding: 14px 130px;
+    padding: 11px;
     letter-spacing: 1.5px;
     font-family: 'Overpass', sans-serif;
     font-weight: 400;
+}
+
+.ratingButtonsStyle {
+    margin: 11px 0 25px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .buttonStyle:hover {
@@ -28,9 +35,11 @@
 }
 
 .starStyle {
-    background-color: #384656;;
-    padding: 11px 14px;
-    border-radius: 25px;
+    width: 20px;
+    background-color: #384656;
+    text-align: center;
+    padding: 12px 13px;
+    border-radius: 50%;
     display: inline-block;
     margin: 10px 0;
 }
@@ -53,4 +62,6 @@
 
 .ratingCard {
     padding-left: 10px;
+    display: flex;
+    flex-direction: column;
 }
