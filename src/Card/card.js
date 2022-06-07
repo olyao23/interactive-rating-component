@@ -16,7 +16,9 @@ export default function Card() {
   //setRatingNumber shows which rating button was clicked
   const [ratingNumber, setRatingNumber] = useState(0);
 
-  // backgroundColor = "hsl(25, 97%, 53%)";
+  const [selectedColor, setSelectedColor] = useState(false);
+
+  //default #384656
 
   return (
     <>
@@ -34,25 +36,87 @@ export default function Card() {
             />
 
             <div className={styles.ratingButtonsStyle}>
+
               <RatingButton
+                style={{
+                  backgroundColor: selectedColor ? "hsl(25, 97%, 53%)" : "#384656",
+                  borderRadius: "25px",
+                  padding: "14px 20px",
+                  color: selectedColor ? "white" : "hsl(217, 12%, 63%)",
+                  border: "transparent",
+                  fontFamily: "'Overpass', sans-serif",
+                  fontWeight: "700",
+                }}
                 ratingNumber={"1"}
-                onClick={() => setRatingNumber(1)}
+                onClick={() => {
+                  setRatingNumber(1);
+                  setSelectedColor(true)
+                }}
               />
+
               <RatingButton
+                style={{
+                  backgroundColor: selectedColor ? "hsl(25, 97%, 53%)" : "#384656",
+                  borderRadius: "25px",
+                  padding: "14px 20px",
+                  color: selectedColor ? "white" : "hsl(217, 12%, 63%)",
+                  border: "transparent",
+                  fontFamily: "'Overpass', sans-serif",
+                  fontWeight: "700",
+                }}
                 ratingNumber={"2"}
-                onClick={() => setRatingNumber(2)}
+                onClick={() => {
+                  setRatingNumber(2);
+                  setSelectedColor(true)
+                }}
               />
               <RatingButton
+                style={{
+                  backgroundColor: selectedColor ? "hsl(25, 97%, 53%)" : "#384656",
+                  borderRadius: "25px",
+                  padding: "14px 20px",
+                  color: selectedColor ? "white" : "hsl(217, 12%, 63%)",
+                  border: "transparent",
+                  fontFamily: "'Overpass', sans-serif",
+                  fontWeight: "700",
+                }}
                 ratingNumber={"3"}
-                onClick={() => setRatingNumber(3)}
+                onClick={() => {
+                  setRatingNumber(3)
+                  setSelectedColor(true)
+                }}
               />
               <RatingButton
+                style={{
+                  backgroundColor: selectedColor ? "hsl(25, 97%, 53%)" : "#384656",
+                  borderRadius: "25px",
+                  padding: "14px 20px",
+                  color: selectedColor ? "white" : "hsl(217, 12%, 63%)",
+                  border: "transparent",
+                  fontFamily: "'Overpass', sans-serif",
+                  fontWeight: "700",
+                }}
                 ratingNumber={"4"}
-                onClick={() => setRatingNumber(4)}
+                onClick={() => {
+                  setRatingNumber(4)
+                  setSelectedColor(true)
+                }}
               />
               <RatingButton
+                style={{
+                  backgroundColor: selectedColor ? "hsl(25, 97%, 53%)" : "#384656",
+                  borderRadius: "25px",
+                  padding: "14px 20px",
+                  color: selectedColor ? "white" : "hsl(217, 12%, 63%)",
+                  border: "transparent",
+                  fontFamily: "'Overpass', sans-serif",
+                  fontWeight: "700",
+                }}
                 ratingNumber={"5"}
-                onClick={() => setRatingNumber(5)}
+                onClick={() => {
+                  setRatingNumber(5)
+                  setSelectedColor(true)
+                }}
               />
             </div>
 
